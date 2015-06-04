@@ -1,8 +1,9 @@
 import os
 import glob
+import sys
 from pydub import AudioSegment
 
-video_dir = '/home/bsachdeva/pyaudio/video/'  # Path where the videos are located
+video_dir = sys.argv[1] # Path where the videos are located
 extension_list = ('*.mp4', '*.flv')
 
 os.chdir(video_dir)
